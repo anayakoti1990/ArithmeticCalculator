@@ -1,4 +1,5 @@
 package com.teachingJava.java;
+import java.math.BigDecimal;
 import java.util.Scanner;
 public class Calcii {
     public static void main(String[] args) {
@@ -27,8 +28,8 @@ public class Calcii {
             result=(value1*value2);
             System.out.println("Multiplication between two values is:"+result);
         }else if (operation.equals("/")){
-           divisionResult=(value1/value2);
-            System.out.println("Division between two values is:"+divisionResult);
+           divisionResult= ((double)value1/(double)value2);
+            System.out.println("Division between two values is:"+BigDecimal.valueOf(divisionResult));
         }else{
             System.out.println("You have chosen wrong operation. Sorry! better luck next time");
         }
